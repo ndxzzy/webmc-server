@@ -1,0 +1,6 @@
+permissions:
+  backend: file
+  backends:
+    file:
+      file: permissions.yml
+  superperms: {}

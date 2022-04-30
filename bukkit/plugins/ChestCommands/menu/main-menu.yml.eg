@@ -1,0 +1,92 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&4Chest Commands'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  command: 'menu'
+
+  # open-with-item - OPTIONAL (you can remove this or
+  # set the item-id/data-value to 0)
+  # In this case it will open with a book (right click)
+  open-with-item:
+    item-id: 340
+    left-click: false
+    right-click: true
+#   data-value: 0
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+website:
+  COMMAND: 'tell:&7Website: &9dev.bukkit.org/bukkit-plugins/chest-commands'
+  NAME: '&9[+] Plugin website [+]'
+  LORE:
+    - 'Link to the website of the plugin.'
+    - 'Click to get the link.'
+  ID: 327
+  POSITION-X: 3
+  POSITION-Y: 2
+
+
+tutorial:
+  COMMAND: 'open:plugin-tutorial.yml'
+  NAME: '&a[+] Plugin tutorial [+]'
+  LORE:
+    - 'Click to open a menu that'
+    - 'will teach you how to use'
+    - 'ChestCommands.'
+  ID: 340
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+example:
+  COMMAND: 'open:example.yml'
+  NAME: '&e[+] Example menu [+]'
+  LORE:
+    - 'How should a menu look like.'
+    - 'You will find examples on'
+    - 'every feature.'
+  ID: 54
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+admin:
+  COMMAND: 'open:admin-console.yml'
+  NAME: '&c[+] The admin console [+]'
+  LORE:
+    - 'An example to learn how to'
+    - 'use the plugin.'
+  ID: 137
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 2
+
+
+shop:
+  COMMAND: 'open:simple-shop.yml'
+  NAME: '&d[+] Shop [+]'
+  LORE:
+    - 'Did you know? You can make'
+    - 'GUI shops with this plugin.'
+  ID: 388
+  KEEP-OPEN: true
+  POSITION-X: 7
+  POSITION-Y: 2

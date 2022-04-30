@@ -1,0 +1,10 @@
+updateSpawnsToNewSpawnsConfig: true
+updateJailsToNewJailsConfig: true
+warnMetrics: true
+moveWorthValuesToWorthYml: true
+moverulesToFile: true
+sanitizeAllUserFilenames: true
+updateUsersToNewDefaultHome: true
+updateUsersPowerToolsFormat: true
+updateUsersHomesFormat: true
+deleteOldItemsCsv: true

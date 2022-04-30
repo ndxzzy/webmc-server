@@ -1,0 +1,19 @@
+21:59:23 [信息] Unable to initialize fancy terminal. To fix this on Windows, install the correct Microsoft Visual C++ 2008 Runtime
+21:59:23 [信息] NOTE: This error is non crucial, and BungeeCord will still function correctly! Do not bug the author about it unless you are still unable to get it working
+21:59:23 [信息] Enabled BungeeCord version unknown
+21:59:23 [信息] Enabled plugin EaglerSkins version 1.0.0 by LAX1DUDE
+21:59:23 [信息] Listening websockets on /0.0.0.0:25565
+21:59:24 [信息] Listening on /127.11.0.1:49977
+21:59:24 [信息] Server bans.txt changed, it will be reloaded automatically
+
+21:59:24 [信息] Reload complete
+
+21:59:30 [信息] Closing listener [id: 0x83e7b5e5, /127.11.0.1:49977]
+21:59:30 [信息] Closing websocket listener /0.0.0.0:25565
+21:59:30 [信息] Closing pending connections
+21:59:30 [信息] Disconnecting 0 connections
+21:59:30 [信息] Closing IO threads
+21:59:32 [信息] §cCommand not found
+21:59:32 [信息] Saving reconnect locations
+21:59:32 [信息] Disabling plugins
+21:59:32 [信息] Thankyou and goodbye

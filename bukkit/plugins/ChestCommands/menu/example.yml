@@ -1,0 +1,208 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+menu-settings:
+
+  # name - appears as the title - REQUIRED
+  name: '&1Example menu'
+
+  # rows - the number of rows of the chest - REQUIRED
+  rows: 3
+
+  # command - OPTIONAL (you can remove this or set it to '')
+  command: ''
+
+  # open-with-item - OPTIONAL (you can remove this or
+  # set the item to 0)
+  open-with-item:
+    item-id: 0
+    left-click: false
+    right-click: false
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+spawncmd:
+  COMMAND: 'spawn'
+  NAME: '&e/spawn'
+  LORE:
+    - 'It justs executes /spawn'
+    - 'as the player who clicked.'
+  ID: 355
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+colored-enchanted-stacked-wool:
+  NAME: '&aWool with additional data'
+  LORE:
+    - ''
+    - 'The item in the file contains these nodes:'
+    - '&fID: 35 &8the id of the wool'
+    - '&fDATA-VALUE: 1 &8data value for orange wool'
+    - '&fAMOUNT: 24 &8the size of the stack'
+    - '&fENCHANTMENT: knockback,10 &8for the enchantment'
+  ID: 35
+  DATA-VALUE: 1
+  AMOUNT: 10
+  ENCHANTMENT: knockback,10
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+this-text-will-not-appear:
+  NAME: '&dFormatting codes'
+  LORE:
+    - 'You can use all the formatting codes!'
+    - '&fColors: &c#c &a#a &9#9 &e#e &f... ...'
+    - '&fRandom (#k): &kfy379!H'
+    - '&fBold (#l): &lexample'
+    - '&fStrikethrough (#m): &mexample'
+    - '&fUnderline (#n): &nexample'
+    - '&fItalic (#o): &oexample'
+  ID: 339
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+test-from-console:
+  COMMAND: 'console:say Hello %player%!'
+  NAME: '&cRuns command from the console.'
+  LORE:
+    - 'It broadcasts your name with the command /say.'
+  ID: 137
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+test-as-op:
+  COMMAND: 'op:say Hello world!'
+  NAME: '&cRuns command as OP.'
+  LORE:
+    - 'Be careful with this type of commands.'
+  ID: 137
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+test-with-placeholder:
+  COMMAND: 'tell:&9Online players: &f%online_players%/%max_players%; tell:&9Your name: &f%player%; tell:&9The world you are in: &f%world%; tell:&9Money: &f%money%'
+  NAME: '&6This message contains some placeholders'
+  LORE:
+    - 'Placeholders will be replaced when the item'
+    - 'is clicked.'
+  ID: 395
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+economy-and-give:
+  COMMAND: 'tell:&aYou have paid 50$ for this command!; give:266'
+  NAME: '&eEconomy & Give command'
+  LORE:
+    - 'This command will be executed'
+    - 'only if you have at least 50$!'
+    - 'It gives you a gold ingot.'
+  ID: 266
+  PRICE: 50
+  POSITION-X: 7
+  POSITION-Y: 1
+
+
+economy-and-take:
+  REQUIRED-ITEM: 266
+  COMMAND: 'tell:&aYou have been paid 50$; givemoney:50'
+  NAME: '&eEconomy & Required item'
+  LORE:
+    - '&cThis command is the opposite of the previous.'
+    - 'It will take you a gold ingot and give you $50.'
+  ID: 266
+  POSITION-X: 8
+  POSITION-Y: 1
+
+
+will-not-close:
+  NAME: '&2Info'
+  LORE:
+    - '&7The menu will not close'
+    - '&7clicking on this item.'
+  ID: 323
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 1
+
+
+a-talking-head:
+  COMMAND: 'tell:This is a simple message, without using commands!'
+  NAME: '&3Tells you something, without using commands.'
+  LORE:
+    - '&7It''s similar to 1.7 /tellraw.'
+  ID: 397
+  DATA-VALUE: 3
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+test-multiple-command:
+  COMMAND: 'console:Say Did you know that...; console:say you can run multiple commands?;'
+  NAME: '&aMultiple commands'
+  LORE:
+    - 'Example of multiple commands.'
+  ID: 322
+  POSITION-X: 2
+  POSITION-Y: 2
+
+
+permission:
+  COMMAND: 'tell:&a[v] You have the correct permission!'
+  NAME: '&8Permission test'
+  LORE:
+    - 'To use this item, you need the'
+    - 'permission "chestcommands.test".'
+    - 'Otherwise, a configurable error'
+    - 'message will be displayed.'
+  ID: 101
+  POSITION-X: 3
+  POSITION-Y: 2
+  PERMISSION: chestcommands.test
+
+
+give-items-yml:
+  NAME: '&bGive items with custom name, lore, ...'
+  ID: 278
+  COMMAND: 'giveitem:enchanted-pick'
+  LORE:
+    - 'You have to configure the item in the file'
+    - 'items.yml, exactly how you configure icons.'
+    - 'then add the command giveitem:&oitemname&7'
+    - 'to an icon. The &oitemname &7is the internal'
+    - 'name that you gave to an item.'
+  POSITION-X: 4
+  POSITION-Y: 2
+
+
+menu-close-no-commands-no-lore:
+  NAME: '&6Close the menu'
+  ID: 123
+  LORE:
+    - 'Create an item without command,'
+    - 'the GUI will just close.'
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&6[arrow_left] Back to the main menu &7(main-menu.yml)'
+  ID: 399
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3
