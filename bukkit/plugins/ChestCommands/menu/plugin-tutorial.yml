@@ -1,0 +1,161 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+
+menu-settings:
+  name: '&1Plugin tutorial'
+  rows: 1
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+info:
+  COMMAND: ''
+  NAME: '&aWhat does this plugin do?'
+  LORE:
+    - 'This plugin allows you to make a'
+    - '&eGUI&7 for your users, so they have'
+    - 'a list of commands to execute'
+    - 'without even typing them on the'
+    - 'keyboard. If you don''t include'
+    - 'special tags, the commands will'
+    - 'be &eexecuted as the player&7, that'
+    - 'needs the permission to use that'
+    - 'command, as if he typed it.'
+  ID: 264
+  KEEP-OPEN: true
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+permissions:
+  NAME: '&aPermissions'
+  LORE:
+    - 'Give your users the permission'
+    - '&echestcommands.open.&6&ofilename&e.yml'
+    - 'to let them use a menu, and'
+    - 'chestcommands.item.&6&ofilename&e.yml'
+    - 'to let them use the configured'
+    - 'item to open the menu.'
+    - 'For example, they must have'
+    - 'only the permission'
+    - '&echestcommands.item.menu.yml'
+    - 'to open the main menu with a book.'
+  ID: 101
+  KEEP-OPEN: true
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+about-menus:
+  NAME: '&aAbout menus'
+  LORE:
+    - 'ChestCommands allows you to make have'
+    - 'multiple menus. Each one has its own'
+    - 'configuration, and its own permission.'
+    - 'Open a menu file, inside the folder'
+    - '&eplugins/ChestCommands/menu/'
+    - 'to see how it appears. You will see'
+    - '2 sections: menu settings and items.'
+    - 'Do not remove "name" or "rows" because'
+    - 'they are required. You can remove'
+    - '"command" and "open-with-item".'
+  ID: 389
+  KEEP-OPEN: true
+  POSITION-X: 3
+  POSITION-Y: 1
+
+
+items:
+  NAME: '&aAbout single items'
+  LORE:
+    - 'An item is an icon of the menu, that can be clicked'
+    - 'to execute one or more commands. There are multiple'
+    - 'items in each menu, and each item contains some nodes.'
+    - 'Example:'
+    - ''
+    - '&6spawncmd:           &8[arrow_left] Internal name, must not be the same of another'
+    - '&e  COMMAND: ''spawn''           &7The command to execute without /'
+    - '&e  NAME: ''Spawn''                &7The name'
+    - '&e  LORE:                          &7The lore of the item'
+    - '&e    - ''Warp to the spawn'''
+    - '&e    - ''with this magic item'''
+    - '&e  PRICE: 100                   &7The price of the command, can be omitted'
+    - '&e  ID: 35                         &7The id of the item used'
+    - '&e  DATA-VALUE: 3              &7The damage value of the item'
+    - '&e  AMOUNT: 10                   &7The size of the stack, can be omitted'
+    - '&e  ENCHANTMENT: power,10   &7The enchantment name with the level'
+    - '&e  PERMISSION: chc.test       &7Permission required to click the item'
+    - '&e  REQUIRED-ITEM: 264,1      &7Required item (for shops) <id>,[amount],[data]'
+    - '&e  POSITION-X: 1               &7The position from the left side (1-9)'
+    - '&e  POSITION-Y: 1               &7The position from the top side (1-[N. of rows])'
+  ID: 267
+  KEEP-OPEN: true
+  POSITION-X: 4
+  POSITION-Y: 1
+
+
+commands:
+  NAME: '&aAbout commands'
+  LORE:
+    - 'There are many types of commands:'
+    - '&e- COMMAND: ''''&f = no command will be executed'
+    - '&e- COMMAND: ''spawn''&f = executed as the player'
+    - '&e- COMMAND: ''spawn;me teleported''&f = multiple commands'
+    - '&e- COMMAND: ''console:say Hello''&f = executed as console'
+    - '&e- COMMAND: ''op:say Hello!''&f = executed as OP'
+    - '&e- COMMAND: ''open:example.yml''&f = to open another menu'
+    - '&e- COMMAND: ''tell:Hello %player%!''&f = customizable message'
+    - '&e- COMMAND: ''broadcast:Broadcasting!''&f = broadcast a message'
+    - '&e- COMMAND: ''give:264,1,0''&f = Give items. give:<id>,[amount],[data]'
+    - '&e- COMMAND: ''giveitem:example''&f = Give a configured item in items.yml'
+    - ''
+    - '&o&7You can use symbols (<3, [*], [v], [cross] ...) in "tell" and "broadcast".'
+  ID: 137
+  KEEP-OPEN: true
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+symbols:
+  NAME: '&aSymbols'
+  LORE:
+    - 'You can use these placeholders in'
+    - 'NAME, LORE, "tell:" and "broadcast:"'
+    - 'commands, to get this symbols:'
+    - ''
+    - '&e<&e3 &f= <3'
+    - '&e[&e*] &f= [*]'
+    - '&e[&e**] &f= [**]'
+    - '&e[&e+] &f= [+]'
+    - '&e[&e++] &f= [++]'
+    - '&e[&ep] &f= [p]'
+    - '&e[&ev] &f= [v]'
+    - '&e[&ecross] &f= [cross]'
+    - '&e[&ex] &f= [x]'
+    - '&e[&e/] &f= [/]'
+    - '&e[&earrow_right] &f = [arrow_right]'
+    - '&e[&earrow_up] &f = [arrow_up]'
+    - '&e[&earrow_down] &f = [arrow_down]'
+    - '&e[&earrow_left] &f = [arrow_left]'
+  ID: 323
+  KEEP-OPEN: true
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&6[arrow_left] Back to the main menu'
+  ID: 399
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 1

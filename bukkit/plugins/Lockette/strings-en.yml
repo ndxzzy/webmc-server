@@ -1,0 +1,48 @@
+language: English
+author: Acru
+editors: ''
+version: 0
+alternate-private-tag: Private
+alternate-moreusers-tag: More Users
+alternate-everyone-tag: Everyone
+alternate-operators-tag: Operators
+alternate-timer-tag: Timer
+alternate-fee-tag: Fee
+msg-user-conflict-door: Conflicting door removed!
+msg-user-illegal: Illegal chest removed!
+msg-user-resize-owned: You cannot resize a chest claimed by ***.
+msg-help-chest: Place a sign headed [Private] next to a chest to lock it.
+msg-owner-release: You have released a container!
+msg-admin-release: (Admin) @@@ has broken open a container owned by ***!
+msg-user-release-owned: You cannot release a container claimed by ***.
+msg-owner-remove: You have removed users from a container!
+msg-user-remove-owned: You cannot remove users from a container claimed by ***.
+msg-user-break-owned: You cannot break a container claimed by ***.
+msg-user-denied-door: You don't have permission to use this door.
+msg-user-touch-fee: 'A fee of ### will be paid to ***, to open.'
+msg-user-touch-owned: This container has been claimed by ***.
+msg-help-select: Sign selected, use /lockette <line number> <text> to edit.
+msg-admin-bypass: Bypassed a door owned by ***, be sure to close it behind you.
+msg-admin-snoop: (Admin) @@@ has snooped around in a container owned by ***!
+msg-user-denied: You don't have permission to open this container.
+msg-error-zone: This zone is protected by ***.
+msg-error-permission: Permission to lock container denied.
+msg-error-claim: No unclaimed container nearby to make Private!
+msg-error-claim-conflict: Conflict with an existing protected door.
+msg-admin-claim-error: Player *** is not online, be sure you have the correct name.
+msg-admin-claim: You have claimed a container for ***.
+msg-owner-claim: You have claimed a container!
+msg-error-adduser-owned: You cannot add users to a container claimed by ***.
+msg-error-adduser: No claimed container nearby to add users to!
+msg-owner-adduser: You have added users to a container!
+msg-help-command1: '&C/lockette <line number> <text> - Edits signs on locked containers.
+  Right click on the sign to edit.'
+msg-help-command2: '&C/lockette fix - Fixes an automatic door that is in the wrong
+  position. Look at the door to edit.'
+msg-help-command3: '&C/lockette reload - Reloads the configuration files. Operators
+  only.'
+msg-help-command4: '&C/lockette version - Reports Lockette version.'
+msg-admin-reload: Reloading plugin configuration files.
+msg-error-fix: No owned door found.
+msg-error-edit: First select a sign by right clicking it.
+msg-owner-edit: Sign edited successfully.

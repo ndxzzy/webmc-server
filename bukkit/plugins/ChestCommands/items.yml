@@ -1,0 +1,31 @@
+# This is a file that contains a list of items: you can use
+# them with "giveitem:" command, instead of the normal "give"
+# to add custom names, lore, and enchantments.
+#
+# HOW TO GIVE ITEMS
+#
+# Here's the item called "example". To give it, in the node
+# COMMAND of an icon, add "giveitem:example" and the player
+# will receive that item.
+#
+#    COMMAND: 'giveitem:example'
+#
+# The format is the same of icons.
+
+
+enchanted-pick:
+  ID: 278
+  NAME: '&aA named pickaxe.'
+  LORE:
+    - '&5You can use even the lore!'
+    - '&5Just open items.yml to'
+    - '&5configure this.'
+  ENCHANTMENT: efficiency,5; fortune,3
+
+
+# 10x orange wool with custom name.
+orange-wool:
+  ID: 35
+  AMOUNT: 10
+  DATA-VALUE: 1
+  NAME: '&6Orange wool.'

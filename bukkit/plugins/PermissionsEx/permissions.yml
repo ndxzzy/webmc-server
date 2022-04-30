@@ -1,0 +1,20 @@
+groups:
+  default:
+    default: true
+    permissions:
+    - essentials.motd
+    - chestcommands.open.menu.yml
+    - essentials.build
+    - essentials.hat
+    - essentials.home
+    - essentials.sethome
+    - essentials.keepinv
+    - essentials.keepxp
+    - essentials.spawn
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - authme.player.*
+    - modifyworld.*
+users: {}

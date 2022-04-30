@@ -1,0 +1,170 @@
+#--------------------------------------------------------------------#
+#                   ClearLag Configuration File                      #
+#--------------------------------------------------------------------#
+# Configure to your liking, reload the config by tying: /lagg reload #
+#                                -                                   #
+#        Here is a helpful tutorial on this configuration setup!     #
+#   http://dev.bukkit.org/server-mods/clearlagg/pages/config-setup/  #
+#--------------------------------------------------------------------#
+#                     All possible mob names                         #
+# http://dev.bukkit.org/server-mods/clearlagg/pages/mob-types/nodes/ #
+#--------------------------------------------------------------------#
+settings:
+  auto-update: false
+  enable-signs: true
+  config-version: six
+  keep-spawn-in-memory: true
+  
+#This option reduces the explosions of mass amounts of tnt, and reduces tnt lag
+tnt:
+  tnt-reducer: false
+  
+#This option reduces fire spread rate
+firespread-reducer:
+  enabled: false
+  time: 2000
+  
+#How many entities should one chunk be allowed to hold?
+chunk-entity-limiter:
+  enabled: false
+  clean-chunk: true
+  limit: 40
+  
+spawn-limiter:
+  enabled: false
+  interval: 15
+  monsters: 300
+  animals: 300
+  
+#Global! Which items SHOULD NOT be removed during removals? #ITEM-ID'S ONLY#
+item-filter:
+  enabled: false
+  filter:
+    - 264
+    - 265
+    - 311
+    - 312
+    - 266
+  
+#Meters your TPS, if it goes to low, run the commands you wrote below!
+tps-meter:
+  enabled: true
+  interval: 15 
+  tps-trigger: 14.0
+  commands:
+    - 'lagg killmobs'
+    - 'lagg clear'
+  
+#This is /lagg killmobs, put what you DON'T want removed! 
+kill-mobs:
+   disable-build-wither: true 
+   mob-filter:
+        - yee
+  
+#This takes care of mob spawners
+mobspawner:
+  enabled: false
+  max-spawn: 4
+  
+#No longer bugged! -- Dont use if you have CB++ or Spigot!
+item-merger:
+  enabled: false
+  radius: 6
+  
+#Auto-removal options
+auto-removal:
+  broadcast-message: '&6[ClearLag] &aRemoved +RemoveAmount Entities!'
+  enable-scheduler: true
+  enable-limit: true
+  autoremoval-interval: 400
+  
+#The warning delay that runs AFTER auto-removal fires: This actually clears the items when it fires!
+warning:
+  autoremoval-warning: true
+  autoremoval-warningdelay: 69
+  broadcast-warning: true
+  autoremoval-warningmessage: '&4[ClearLag] &cWarning Ground items will be removed in 69 seconds!'
+  
+#What should/not be removed during an auto-removal
+remove:
+  world-filter:
+    - this_world
+  broadcast-removal: false
+  boat: false
+  falling-block: true
+  experienceOrb: true
+  painting: false
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: false
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true
+  mobs:
+    - yee
+ 
+#What should/not be removed during /lagg clear 
+command-remove:
+  world-filter:
+    - this_world
+  broadcast-removal: false
+  boat: false
+  falling-block: true
+  experienceOrb: true
+  painting: false
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: false
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true
+  mobs:
+    - yee
+     
+check:
+  world-filter:
+    - this_world
+  boat: false
+  falling-block: true
+  experienceOrb: true
+  painting: false
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: false
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true
+  mobs:
+    creature: true
+    animals: true
+    monster: true
+     
+limit:
+  max: 1000
+  check-interval: 60
+  world-filter:
+    - this_world
+  broadcast-removal: true
+  remove:
+  boat: false
+  falling-block: true
+  experienceOrb: true
+  painting: false
+  projectile: true
+  item: true
+  itemframe: false
+  minecart: false
+  primed-tnt: true
+  arrow: true
+  snowball: true
+  fireball: true
+  ender-signal: true

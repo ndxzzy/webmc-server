@@ -1,0 +1,122 @@
+######################
+#+                  +#
+#   MENU SETTINGS    #
+#+                  +#
+######################
+
+
+menu-settings:
+  name: '&4Admin console'
+  rows: 3
+
+
+######################
+#+                  +#
+#       ITEMS        #
+#+                  +#
+######################
+
+
+weather-clear:
+  COMMAND: 'weather clear'
+  NAME: '&aMakes the weather sunny.'
+  LORE:
+    - '/weather clear'
+  ID: 351
+  DATA-VALUE: 11
+  POSITION-X: 1
+  POSITION-Y: 1
+
+
+weather-rain:
+  COMMAND: 'weather storm'
+  NAME: '&aMakes the weather rainy.'
+  LORE:
+    - '/weather storm'
+  ID: 351
+  DATA-VALUE: 7
+  POSITION-X: 2
+  POSITION-Y: 1
+
+
+day:
+  COMMAND: 'time set day'
+  NAME: '&aSets the time to day.'
+  LORE:
+    - '/time set day'
+  ID: 347
+  POSITION-X: 5
+  POSITION-Y: 1
+
+
+night:
+  COMMAND: 'time set night'
+  NAME: '&aSets the time to night.'
+  LORE:
+    - '/time set night'
+  ID: 347
+  POSITION-X: 6
+  POSITION-Y: 1
+
+
+diamonds:
+  COMMAND: 'give:264,64'
+  NAME: '&aGive yourself a stack of diamonds.'
+  LORE:
+    - 'give:264,64 (this is a special command)'
+  ID: 264
+  AMOUNT: 64
+  POSITION-X: 1
+  POSITION-Y: 2
+
+
+suicide:
+  COMMAND: 'kill'
+  NAME: '&cCommit suicide.'
+  LORE:
+    - '/kill'
+    - ''
+    - 'If you have essentials, use "kill %player%"'
+  ID: 331
+  POSITION-X: 5
+  POSITION-Y: 2
+
+
+clear-potion-effects:
+  COMMAND: 'effect %player% clear'
+  NAME: '&aClear active potion effects.'
+  LORE:
+    - '/effect %player% clear'
+  ID: 373
+  POSITION-X: 1
+  POSITION-Y: 3
+
+
+drugs-are-bad:
+  NAME: '&dDo not use drugs, don''t click!'
+  COMMAND: 'effect %player% CONFUSION; effect %player% BLINDNESS; effect %player% JUMP 30 2; effect %player% SLOW_DIGGING 30 3'
+  LORE:
+    - 'Too long to write it here.'
+  ID: 338
+  POSITION-X: 2
+  POSITION-Y: 3
+
+
+list:
+  COMMAND: 'list'
+  NAME: '&aList of online players.'
+  LORE:
+    - '/list'
+  ID: 397
+  DATA-VALUE: 3
+  POSITION-X: 5
+  POSITION-Y: 3
+
+
+return-to-main:
+  COMMAND: 'open:main-menu.yml'
+  NAME: '&6[arrow_left] Back to the main menu'
+  ID: 399
+  KEEP-OPEN: true
+  POSITION-X: 9
+  POSITION-Y: 3
